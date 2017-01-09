@@ -24,10 +24,12 @@ $db = parse_url($_ENV["DATABASE_URL"]);
 define('DB_NAME', trim($db["path"],"/"));
 
 /** MySQL database username */
-define('DB_USER', $db["user"]);
+//define('DB_USER', $db["user"]);
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+//define('DB_PASSWORD', $db["pass"]);
+define('DB_PASSWORD', 'password');
 
 /** MySQL hostname */
 define('DB_HOST', $db["host"] . ':' . $db["port"]);
